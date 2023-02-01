@@ -8,10 +8,11 @@ public class Main {
         Problem problem = new Problem();
 
         // sample input
-
+        String sampleString = "kj";
+        char sampleChar = 'k';
 
         // print output to console
-
+        System.out.println(problem.percentageLetter(sampleString, sampleChar));
 
         // print confirmation program successfully finished to console
         System.out.println("Main program done!");
