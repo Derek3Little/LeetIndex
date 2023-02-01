@@ -7,7 +7,7 @@ public class Problem {
 
     // submitted? date?
 
-    public int percentageLetter(String s, char letter) {
+    public static int percentageLetter(String s, char letter) {
 
         // short-circuit if letter is not in s?
         // no, since indexOf() runs in linear time anyway!
