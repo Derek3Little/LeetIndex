@@ -3,8 +3,11 @@ package LeetIndexTemplate;
 public class Problem {
 
     // url of problem
+    // https://leetcode.com/problems/percentage-of-letter-in-string/
 
+    public int percentageLetter(String s, char letter) {
 
-    // problem method and helper methods
-
+        return 0;
+    }
+    
 }

@@ -5,7 +5,7 @@ public class Main {
     public static void main(String[] args) {
 
         // instantiate object of problem class
-
+        Problem problem = new Problem();
 
         // sample input
 
