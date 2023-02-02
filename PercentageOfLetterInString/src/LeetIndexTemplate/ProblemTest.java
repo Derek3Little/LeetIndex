@@ -17,6 +17,15 @@ class ProblemTest {
         assertEquals(expected, actual);
     }
 
+    @Test // empty string
+    public void emptyString() {
+        String testString = "";
+        char testLetter = 'q';
+        int expected = 0;
+        int actual = Problem.percentageLetter(testString, testLetter);
+        assertEquals(expected, actual);
+    }
+
     @Test // only letter present, 100 percent
     public void onlyLetterPresent() {
         String testString = "zzz";
@@ -38,7 +47,7 @@ class ProblemTest {
     @Test // 100 max string length by problem constraint, a = 10%
     public void oneHundred() {
         String testString = "abcdefghijabcdefghijabcdefghijabcdefghijabcdefghijabcdefghijabcdefghijabcdefghijabcdefgh" +
-                "ijabcdefghij";
+                "ijabcdefghij"; // length of 100, 'abcdefghij' repeated 10x
         char testLetter = 'a';
         int expected = 10;
         int actual = Problem.percentageLetter(testString, testLetter);
@@ -52,6 +61,15 @@ class ProblemTest {
         String testString = "foobar";
         char testLetter = 'o';
         int expected = 33;
+        int actual = Problem.percentageLetter(testString, testLetter);
+        assertEquals(expected, actual);
+    }
+
+    @Test // a more complex typical case
+    public void typicalExample() {
+        String testString = "deoxyribonucleic"; // real 16 character word
+        char testLetter = 'c';
+        int expected = 12;
         int actual = Problem.percentageLetter(testString, testLetter);
         assertEquals(expected, actual);
     }
