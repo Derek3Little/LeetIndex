@@ -5,7 +5,7 @@ public class Problem {
     // url of problem
     // https://leetcode.com/problems/percentage-of-letter-in-string/
 
-    // SUBMITTED 2023.02.02
+    // SUBMITTED 2023.02.03
 
     public static int percentageLetter(String s, char letter) {
 
