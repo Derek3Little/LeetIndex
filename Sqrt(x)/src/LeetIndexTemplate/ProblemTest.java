@@ -31,4 +31,13 @@ class ProblemTest {
         int actual = Problem.mySqrt(testInt);
         assertEquals(expected, actual);
     }
+
+    @Test // casting long to collect maximum 2^31 input constraint
+    public void longInt() {
+        long testLong = 2147483647L;
+        int expected = 46340;
+        int longCast = (int) testLong;
+        int actual = Problem.mySqrt(longCast);
+        assertEquals(expected, actual);
+    }
 }
