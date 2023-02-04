@@ -7,7 +7,7 @@ public class Problem {
     // url of problem
     // https://leetcode.com/problems/keep-multiplying-found-values-by-two/
 
-    // submitted? date?
+    // SUBMITTED 2023.02.04
 
     public static int findFinalValue(int[] nums, int original) {
 
