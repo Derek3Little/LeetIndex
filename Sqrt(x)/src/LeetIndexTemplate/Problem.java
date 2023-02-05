@@ -5,7 +5,7 @@ public class Problem {
     // url of problem
     // https://leetcode.com/problems/sqrtx/
 
-    // submitted? date?
+    // SUBMITTED 2023.02.05
 
     public static int mySqrt(int x) {
 
