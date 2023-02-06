@@ -5,7 +5,7 @@ public class Problem {
     // url of problem
     // https://leetcode.com/problems/replace-elements-with-greatest-element-on-right-side/
 
-    // SUBMITTED? yyyy.mm.dd?
+    // SUBMITTED 2023.02.06
 
     public static int[] replaceElements(int[] arr) {
 
