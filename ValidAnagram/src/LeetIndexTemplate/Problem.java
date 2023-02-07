@@ -9,7 +9,7 @@ public class Problem {
 
     // SUBMITTED? 2023.02.08???
 
-    public boolean isAnagram(String s, String t) {
+    public static boolean isAnagram(String s, String t) {
 
         // strings must be of equal length
         if (s.length() != t.length()) {
@@ -33,7 +33,7 @@ public class Problem {
     }
 
     // method returning a populated hashmap of characters and their counts
-    public HashMap<Character, Integer> hashMapify(String string) {
+    public static HashMap<Character, Integer> hashMapify(String string) {
 
         // hashmap will store characters as keys, and their counts as values
         HashMap<Character, Integer> hashMap = new HashMap<Character, Integer>();
