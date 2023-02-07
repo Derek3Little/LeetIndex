@@ -2,6 +2,12 @@ package LeetIndexTemplate;
 
 public class Problem {
 
+
+    // url of problem
+    // https://leetcode.com/problems/split-a-string-in-balanced-strings/
+
+    // SUBMITTED? 2023.02.07???
+
     public static int balancedStringSplit(String s) {
 
         // fields for ops
