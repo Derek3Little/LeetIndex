@@ -8,7 +8,7 @@ public class Problem {
     // url of problem:
     // https://leetcode.com/problems/cells-in-a-range-on-an-excel-sheet/
 
-    // SUBMISSION DATE: yyyy.mm.dd
+    // SUBMISSION DATE: 2023.02.08
 
     public static List<String> cellsInRange(String s) {
 
