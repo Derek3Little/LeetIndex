@@ -2,10 +2,11 @@ package LeetIndexTemplate;
 
 public class Problem {
 
-    // url of problem
+    // url of problem:
+    // (url goes here)
 
+    // SUBMISSION DATE: yyyy.mm.dd
 
-    // problem method and helper methods
+    // problem methods etc
 
-    
 }
