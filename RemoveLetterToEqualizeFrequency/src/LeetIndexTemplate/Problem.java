@@ -8,7 +8,7 @@ public class Problem {
     // url of problem:
     // https://leetcode.com/problems/remove-letter-to-equalize-frequency/
 
-    // SUBMISSION DATE: yyyy.mm.dd
+    // SUBMISSION DATE: 2023.02.09
 
     public static boolean equalFrequency(String word) {
 
