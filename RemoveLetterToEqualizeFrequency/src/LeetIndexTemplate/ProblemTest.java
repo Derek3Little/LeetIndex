@@ -36,9 +36,15 @@ class ProblemTest {
         assertTrue(Problem.equalFrequency(testString));
     }
 
-    @Test // minimum input
+    @Test // can remove single character to equalize
     public void removeSingletonToEqualize() {
         String testString = "abbccdd"; // true
+        assertTrue(Problem.equalFrequency(testString));
+    }
+
+    @Test // all same character
+    public void allSameCharacter() {
+        String testString = "zzzzzzz";
         assertTrue(Problem.equalFrequency(testString));
     }
 
