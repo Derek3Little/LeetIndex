@@ -24,6 +24,12 @@ class ProblemTest {
         assertTrue(Problem.equalFrequency(testString));
     }
 
+    @Test // more than two distinct character counts
+    public void tooManyCountsF() {
+        String testString = "babbdd"; // false, too many counts.. a = 1, b = 3, d = 2
+        assertTrue(!Problem.equalFrequency(testString));
+    }
+
     @Test // all distinct characters with count of 1, any can be removed!
     public void allDistinctT() {
         String testString = "abc";
@@ -40,6 +46,12 @@ class ProblemTest {
     public void typicalInputT() {
         String testString = "aabbccc";
         assertTrue(Problem.equalFrequency(testString));
+    }
+
+    @Test // typical input with too many to removeFALSE
+    public void typicalInputTooManyF() {
+        String testString = "aaabbccc"; // false
+        assertTrue(!Problem.equalFrequency(testString)); // !
     }
 
     @Test // typical input FALSE
