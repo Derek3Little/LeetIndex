@@ -42,11 +42,6 @@ public class Problem {
         // populating second hashmap
         for (int i = 0; i < charCountArray.length; i++) {
 
-            // more than two counts is an autofalse, short-circuit!
-            if (countsOfCounts.size() > 2) {
-                return false;
-            }
-
             // proceed with populating
             if (countsOfCounts.containsKey(charCountArray[i])) { // if found, increment count
                 int count = countsOfCounts.get(charCountArray[i]);
@@ -54,6 +49,11 @@ public class Problem {
                 countsOfCounts.put(charCountArray[i], count);
             } else { // if not found, add with initial count of 1
                 countsOfCounts.put(charCountArray[i], 1);
+            }
+
+            // more than two counts is an autofalse, short-circuit!
+            if (countsOfCounts.size() > 2) {
+                return false;
             }
         }
 
