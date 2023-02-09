@@ -9,10 +9,9 @@ public class Main {
 
         // sample input
         String testString1F = "aaabbb";
-        String testString2T = "aaabbbcccc";
+        String testString2T = "aaabbccc"; // false!
 
         // print output to console
-        System.out.println(problem.equalFrequency(testString1F));
         System.out.println(problem.equalFrequency(testString2T));
 
         // print confirmation program successfully finished to console

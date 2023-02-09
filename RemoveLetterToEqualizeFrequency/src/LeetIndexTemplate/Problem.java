@@ -1,5 +1,6 @@
 package LeetIndexTemplate;
 
+import java.util.Arrays;
 import java.util.HashMap;
 
 public class Problem {
@@ -35,6 +36,13 @@ public class Problem {
 
         // populating second hashmap
         for (int i = 0; i < charCountArray.length; i++) {
+
+            // more than two counts is an autofalse, short-circuit!
+            if (countsOfCounts.size() > 2) {
+                return false;
+            }
+
+            // proceed with populating
             if (countsOfCounts.containsKey(charCountArray[i])) { // if found, increment count
                 int count = countsOfCounts.get(charCountArray[i]);
                 count++;
@@ -44,9 +52,30 @@ public class Problem {
             }
         }
 
-        
+        // at this point two and only two distinct counts will pass
+        if (countsOfCounts.size() != 2) {
+            return false;
+        }
 
-        return false;
+        // one of those two counts must be one
+        if (!countsOfCounts.values().contains(1)) {
+            return false;
+        }
+
+        // the greater of the two values must be greater by one
+        Integer[] finalCounts = countsOfCounts.keySet().toArray(new Integer[0]);
+
+        // sort array to index greater/lesser
+        Arrays.sort(finalCounts);
+
+        int greater = countsOfCounts.get(finalCounts[1]);
+        int lesser = countsOfCounts.get(finalCounts[0]);
+
+        // final check, [1] - [0] == 1, and count of [1] < count of [0]
+        if (finalCounts[1] - finalCounts[0] == 1 && countsOfCounts.get(finalCounts[1]) < countsOfCounts.get(finalCounts[0])) {
+            return true;
+        } else {
+            return false;
+        }
     }
-
 }
