@@ -18,10 +18,10 @@ class ProblemTest {
         assertTrue(Problem.equalFrequency(testString));
     }
 
-    @Test // almost minimum FALSE
-    public void almostMinimumInputF() {
-        String testString = "abc"; // false
-        assertTrue(!Problem.equalFrequency(testString)); // !
+    @Test // all distinct characters with count of 1, any can be removed!
+    public void allDistinctT() {
+        String testString = "bac";
+        assertTrue(Problem.equalFrequency(testString));
     }
 
     @Test // typical input TRUE

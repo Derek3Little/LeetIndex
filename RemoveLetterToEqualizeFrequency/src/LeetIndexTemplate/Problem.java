@@ -57,9 +57,10 @@ public class Problem {
             }
         }
 
-        // at this point two and only two distinct counts will pass
-        if (countsOfCounts.size() != 2) {
-            return false;
+        // if there is only one distinct count equal to the length of the word, all elements have a count of one, and
+        // and one element can be removed to equalize frequency
+        if (countsOfCounts.size() == 1 && characterCounts.size() == word.length()) {
+            return true;
         }
 
         // one of those two counts must be one
