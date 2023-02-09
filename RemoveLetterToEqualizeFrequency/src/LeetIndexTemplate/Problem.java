@@ -12,6 +12,11 @@ public class Problem {
 
     public static boolean equalFrequency(String word) {
 
+        // minimum string edge case check
+        if (word.length() == 2) {
+            return true;
+        }
+
         // first hashmap collects characters and their counts
         HashMap<Character, Integer> characterCounts = new HashMap<>();
 
@@ -72,7 +77,8 @@ public class Problem {
         int lesser = countsOfCounts.get(finalCounts[0]);
 
         // final check, [1] - [0] == 1, and count of [1] < count of [0]
-        if (finalCounts[1] - finalCounts[0] == 1 && countsOfCounts.get(finalCounts[1]) < countsOfCounts.get(finalCounts[0])) {
+        if (finalCounts[1] - finalCounts[0] == 1
+                && countsOfCounts.get(finalCounts[1]) <= countsOfCounts.get(finalCounts[0])) {
             return true;
         } else {
             return false;

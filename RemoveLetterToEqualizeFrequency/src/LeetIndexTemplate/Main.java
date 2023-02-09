@@ -9,7 +9,7 @@ public class Main {
 
         // sample input
         String testString1F = "aaabbb";
-        String testString2T = "aaabbccc"; // false!
+        String testString2T = "aab"; // true!
 
         // print output to console
         System.out.println(problem.equalFrequency(testString2T));
