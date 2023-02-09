@@ -8,10 +8,12 @@ public class Main {
         Problem problem = new Problem();
 
         // sample input
-
+        String testString1F = "aaabbb";
+        String testString2T = "aaabbbcccc";
 
         // print output to console
-
+        System.out.println(problem.equalFrequency(testString1F));
+        System.out.println(problem.equalFrequency(testString2T));
 
         // print confirmation program successfully finished to console
         System.out.println("\nMain program done!");
