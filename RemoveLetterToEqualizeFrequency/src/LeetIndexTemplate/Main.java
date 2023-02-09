@@ -8,8 +8,8 @@ public class Main {
         Problem problem = new Problem();
 
         // sample input
-        String testString1F = "aaabbb";
-        String testString2T = "bac"; // true!
+        String testString1F = "aaabbccc";
+        String testString2T = "babbdd"; // true!
 
         // print output to console
         System.out.println(problem.equalFrequency(testString2T));

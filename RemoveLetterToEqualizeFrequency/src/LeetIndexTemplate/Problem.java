@@ -22,6 +22,7 @@ public class Problem {
 
         // populating first hashmap
         for (int i = 0; i < word.length(); i++) {
+
             if (characterCounts.containsKey(word.charAt(i))) { // if found, increment count
                 int count = characterCounts.get(word.charAt(i));
                 count++;
@@ -68,14 +69,14 @@ public class Problem {
             return false;
         }
 
-        // the greater of the two values must be greater by one
+        // the greater of the two values must be greater by one, easily comparable array
         Integer[] finalCounts = countsOfCounts.keySet().toArray(new Integer[0]);
 
         // sort array to index greater/lesser
         Arrays.sort(finalCounts);
 
         // having sorted, if there is only 1 of count 1, it can be removed to equalize!
-        if (countsOfCounts.get(finalCounts[0]) == 1) {
+        if (countsOfCounts.get(finalCounts[0]) == 1 && finalCounts[0] == 1) {
             return true;
         }
 
