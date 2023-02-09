@@ -80,6 +80,11 @@ public class Problem {
             return true;
         }
 
+        // if there is only one final count, all characters are the same and any one can be removed to equalize
+        if (finalCounts.length == 1) {
+            return true;
+        }
+
         // final check, [1] - [0] == 1, and count of [1] < count of [0]
         if (finalCounts[1] - finalCounts[0] == 1
                 && countsOfCounts.get(finalCounts[1]) <= countsOfCounts.get(finalCounts[0])) {
