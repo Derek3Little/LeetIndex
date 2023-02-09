@@ -6,9 +6,15 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class ProblemTest {
 
-    @Test // minimum input
-    public void minimumInput() {
+    @Test // minimum input both same character
+    public void minimumInputSame() {
         String testString = "aa"; // true
+        assertTrue(Problem.equalFrequency(testString));
+    }
+
+    @Test // minimum input diff characters
+    public void minimumInputDiff() {
+        String testString = "ab"; // true
         assertTrue(Problem.equalFrequency(testString));
     }
 
@@ -20,7 +26,13 @@ class ProblemTest {
 
     @Test // all distinct characters with count of 1, any can be removed!
     public void allDistinctT() {
-        String testString = "bac";
+        String testString = "abc";
+        assertTrue(Problem.equalFrequency(testString));
+    }
+
+    @Test // minimum input
+    public void removeSingletonToEqualize() {
+        String testString = "abbccdd"; // true
         assertTrue(Problem.equalFrequency(testString));
     }
 

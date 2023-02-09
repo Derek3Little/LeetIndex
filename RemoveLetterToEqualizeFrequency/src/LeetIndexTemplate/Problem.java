@@ -58,12 +58,12 @@ public class Problem {
         }
 
         // if there is only one distinct count equal to the length of the word, all elements have a count of one, and
-        // and one element can be removed to equalize frequency
+        // any one element can be removed to equalize frequency
         if (countsOfCounts.size() == 1 && characterCounts.size() == word.length()) {
             return true;
         }
 
-        // one of those two counts must be one
+        // with single count case handled, one of those two counts must be one
         if (!countsOfCounts.values().contains(1)) {
             return false;
         }
@@ -74,8 +74,10 @@ public class Problem {
         // sort array to index greater/lesser
         Arrays.sort(finalCounts);
 
-        int greater = countsOfCounts.get(finalCounts[1]);
-        int lesser = countsOfCounts.get(finalCounts[0]);
+        // having sorted, if there is only 1 of count 1, it can be removed to equalize!
+        if (countsOfCounts.get(finalCounts[0]) == 1) {
+            return true;
+        }
 
         // final check, [1] - [0] == 1, and count of [1] < count of [0]
         if (finalCounts[1] - finalCounts[0] == 1
