@@ -8,10 +8,10 @@ public class Main {
         Problem problem = new Problem();
 
         // sample input
-
+        String testString = "a1c1e1";
 
         // print output to console
-
+        System.out.println(problem.replaceDigits(testString));
 
         // print confirmation program successfully finished to console
         System.out.println("\nMain program done!");
