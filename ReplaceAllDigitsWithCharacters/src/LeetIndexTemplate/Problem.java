@@ -7,7 +7,7 @@ public class Problem {
 
     // SUBMISSION DATE: yyyy.mm.dd
 
-    public String replaceDigits(String s) {
+    public static String replaceDigits(String s) {
 
         // stringbuilder for building return string
         StringBuilder stringBuilder = new StringBuilder();
