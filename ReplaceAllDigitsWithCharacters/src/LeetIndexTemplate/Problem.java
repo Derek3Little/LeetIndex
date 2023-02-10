@@ -5,7 +5,7 @@ public class Problem {
     // url of problem:
     // https://leetcode.com/problems/replace-all-digits-with-characters/
 
-    // SUBMISSION DATE: yyyy.mm.dd
+    // SUBMISSION DATE: 2023.02.10
 
     public static String replaceDigits(String s) {
 
