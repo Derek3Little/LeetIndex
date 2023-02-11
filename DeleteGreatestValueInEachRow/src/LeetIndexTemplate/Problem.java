@@ -12,4 +12,34 @@ public class Problem {
         return 0;
     }
 
+    public static int greatestValueOfRow(int[] row) {
+
+        // tracking index of greatest
+        // initialized to value less than lowest possible value (0) given in constraints (1-50)
+        int indexOfGreatest = 0;
+
+        // tracking greatest value
+        int valueOfGreatest = 0;
+
+        // loop through columns of row
+        for (int i = 0; i < row.length; i++) {
+
+            // if new greatest value is found,
+            if (row[i] > row[indexOfGreatest]) {
+
+                // collect the index
+                indexOfGreatest = i;;
+            }
+        }
+
+        // loop exits with index of greatest value, record greatest value for return
+        valueOfGreatest = row[indexOfGreatest];
+
+        // 'delete' value at the index
+        row[indexOfGreatest] = 0;
+
+        // return the value!
+        return valueOfGreatest;
+    }
+
 }
