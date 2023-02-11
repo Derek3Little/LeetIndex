@@ -45,6 +45,7 @@ public class Problem {
     }
 
     // collecting greatest value of full grid by calling greatestValueOfRow on every row
+    // this will delete the greatest value in each row, and return the greatest of those deleted values
     public static int greatestValueOfGrid(int[][] rows) {
 
         // tracking value of greatest

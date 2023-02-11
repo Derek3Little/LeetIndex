@@ -63,5 +63,82 @@ class ProblemTest {
         assertArrayEquals(expectedRow, actualRow); // confirming deletion
     }
 
+        // greatestValueOfGrid tests
 
+    @Test // single element in single row grid
+    public void greatestValueOfGridOneElementOneRow() {
+        int[][] testGrid = {{1}};
+        int expectedInt = 1;
+        int actualInt = Problem.greatestValueOfGrid(testGrid);
+        int[][] expectedGrid = {{0}};
+        int[][] actualGrid = testGrid;
+        assertEquals(expectedInt, actualInt); // confirming return
+        assertArrayEquals(expectedGrid, actualGrid); // confirming deletion
+    }
+
+    @Test // single element rows in grid
+    public void greatestValueOfGridOneElementMultipleRows() {
+        int[][] testGrid = {{1},{7},{11}};
+        int expectedInt = 11;
+        int actualInt = Problem.greatestValueOfGrid(testGrid);
+        int[][] expectedGrid = {{0},{0},{0}};
+        int[][] actualGrid = testGrid;
+        assertEquals(expectedInt, actualInt); // confirming return
+        assertArrayEquals(expectedGrid, actualGrid); // confirming deletion
+    }
+
+    @Test // duplicate greatest
+    public void greatestValueOfGridDupeGreatest() {
+        int[][] testGrid = {{1,6,9},{2,3,9},{9,8,4}};
+        int expectedInt = 9;
+        int actualInt = Problem.greatestValueOfGrid(testGrid);
+        int[][] expectedGrid = {{1,6,0},{2,3,0},{0,8,4}};
+        int[][] actualGrid = testGrid;
+        assertEquals(expectedInt, actualInt); // confirming return
+        assertArrayEquals(expectedGrid, actualGrid); // confirming deletion
+    }
+
+    @Test // greatest first
+    public void greatestValueOfGridFirst() {
+        int[][] testGrid = {{21,18,20,13,10},{20,13,6,1,2},{19,16,13,10,7}};
+        int expectedInt = 21;
+        int actualInt = Problem.greatestValueOfGrid(testGrid);
+        int[][] expectedGrid = {{0,18,20,13,10},{0,13,6,1,2},{0,16,13,10,7}};
+        int[][] actualGrid = testGrid;
+        assertEquals(expectedInt, actualInt); // confirming return
+        assertArrayEquals(expectedGrid, actualGrid); // confirming deletion
+    }
+
+    @Test // greatest last
+    public void greatestValueOfGridLast() {
+        int[][] testGrid = {{7,18,20,13,10},{20,13,6,1,2},{19,16,13,10,21}};
+        int expectedInt = 21;
+        int actualInt = Problem.greatestValueOfGrid(testGrid);
+        int[][] expectedGrid = {{7,18,0,13,10},{0,13,6,1,2},{19,16,13,10,0}};
+        int[][] actualGrid = testGrid;
+        assertEquals(expectedInt, actualInt); // confirming return
+        assertArrayEquals(expectedGrid, actualGrid); // confirming deletion
+    }
+
+    @Test // greatest mid
+    public void greatestValueOfGridMid() {
+        int[][] testGrid = {{15,18,20,13,10},{20,13,21,1,2},{19,16,13,10,6}};
+        int expectedInt = 21;
+        int actualInt = Problem.greatestValueOfGrid(testGrid);
+        int[][] expectedGrid = {{15,18,0,13,10},{20,13,0,1,2},{0,16,13,10,6}};
+        int[][] actualGrid = testGrid;
+        assertEquals(expectedInt, actualInt); // confirming return
+        assertArrayEquals(expectedGrid, actualGrid); // confirming deletion
+    }
+
+    @Test // greatest last
+    public void greatestValueOfGridSequential() {
+        int[][] testGrid = {{15,18,20,13,10},{20,13,21,1,2}};
+        int expectedInt = 21;
+        int actualInt = Problem.greatestValueOfGrid(testGrid);
+        int[][] expectedGrid = {{15,18,0,13,10},{20,13,0,1,2},{0,16,13,10,6}};
+        int[][] actualGrid = testGrid;
+        assertEquals(expectedInt, actualInt); // confirming return
+        assertArrayEquals(expectedGrid, actualGrid); // confirming deletion
+    }
 }
