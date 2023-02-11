@@ -131,14 +131,21 @@ class ProblemTest {
         assertArrayEquals(expectedGrid, actualGrid); // confirming deletion
     }
 
-    @Test // greatest last
-    public void greatestValueOfGridSequential() {
-        int[][] testGrid = {{15,18,20,13,10},{20,13,21,1,2}};
-        int expectedInt = 21;
-        int actualInt = Problem.greatestValueOfGrid(testGrid);
-        int[][] expectedGrid = {{15,18,0,13,10},{20,13,0,1,2},{0,16,13,10,6}};
-        int[][] actualGrid = testGrid;
-        assertEquals(expectedInt, actualInt); // confirming return
-        assertArrayEquals(expectedGrid, actualGrid); // confirming deletion
+        // deleteGreatestValue tests
+
+    @Test // single element grid
+    public void deleteGreatestValueSingle() {
+        int[][] testGrid = {{1}};
+        int expectedInt = 1;
+        int actualInt = Problem.deleteGreatestValue(testGrid);
+        assertEquals(expectedInt, actualInt);
+    }
+
+    @Test // multiple element grid
+    public void deleteGreatestValueMultiple() {
+        int[][] testGrid = {{1,2,3,4},{4,3,2,1},{9,7,5,3}};
+        int expectedInt = 24;
+        int actualInt = Problem.deleteGreatestValue(testGrid);
+        assertEquals(expectedInt, actualInt);
     }
 }
