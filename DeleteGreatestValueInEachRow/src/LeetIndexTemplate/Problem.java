@@ -9,7 +9,16 @@ public class Problem {
 
     public static int deleteGreatestValue(int[][] grid) {
 
-        return 0;
+        // tracking sum
+        int sum = 0;
+
+        // each column needs a pass
+        for (int i = 0; i < grid[0].length; i++) {
+            sum += greatestValueOfGrid(grid);
+        }
+
+        // return sum
+        return sum;
     }
 
     // collecting greatest value of a given row, 'deleting' by replacing with '0'
