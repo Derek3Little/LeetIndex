@@ -12,6 +12,8 @@ public class Problem {
         return 0;
     }
 
+    // collecting greatest value of a given row, 'deleting' by replacing with '0'
+    // note problem constraint requires minimum element value of '1'
     public static int greatestValueOfRow(int[] row) {
 
         // tracking index of greatest
@@ -42,4 +44,27 @@ public class Problem {
         return valueOfGreatest;
     }
 
+    // collecting greatest value of full grid by calling greatestValueOfRow on every row
+    public static int greatestValueOfGrid(int[][] rows) {
+
+        // tracking value of greatest
+        // initialized to value less than lowest possible value (0) given in constraints (1-50)
+        int greatestValue = 0;
+
+        // looping through rows, comparing greatest values
+        for (int i = 0; i < rows.length; i++) {
+
+            // collect greatest value of the row
+            int newValue = greatestValueOfRow(rows[i]);
+
+            // compare it to greatest value of rows
+            if (newValue > greatestValue) {
+
+                // if greater, it is the greatest
+                greatestValue = newValue;
+            }
+        }
+
+        return greatestValue;
+    }
 }
