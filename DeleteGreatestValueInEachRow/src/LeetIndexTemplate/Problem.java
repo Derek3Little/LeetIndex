@@ -5,7 +5,7 @@ public class Problem {
     // url of problem:
     // https://leetcode.com/problems/delete-greatest-value-in-each-row/
 
-    // SUBMISSION DATE: yyyy.mm.dd
+    // SUBMISSION DATE: 2023.02.11
 
     public static int deleteGreatestValue(int[][] grid) {
 
