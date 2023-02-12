@@ -11,7 +11,8 @@ public class Main {
         char[] sampleString = {'h','i'};
 
         // print output to console
-        System.out.println();
+        problem.reverseString(sampleString);
+        System.out.println(sampleString);
 
         // print confirmation program successfully finished to console
         System.out.println("\nMain program done!");
