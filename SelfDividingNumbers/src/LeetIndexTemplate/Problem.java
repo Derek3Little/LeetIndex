@@ -10,7 +10,7 @@ public class Problem {
 
     // SUBMISSION DATE: yyyy.mm.dd
 
-    public List<Integer> selfDividingNumbers(int left, int right) {
+    public static List<Integer> selfDividingNumbers(int left, int right) {
 
         // build an arrayList of the range
         ArrayList<Integer> arrayList = new ArrayList<>(right - left + 1);
