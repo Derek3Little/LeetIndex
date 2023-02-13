@@ -15,6 +15,12 @@ public class Problem {
         // build an arrayList of the range
         ArrayList<Integer> arrayList = new ArrayList<>(right - left + 1);
 
+        for (int i = left; i < right + 1; i++) {
+            if (selfDividify(i)) {
+                arrayList.add(i);
+            }
+        }
+
         return arrayList;
     }
 

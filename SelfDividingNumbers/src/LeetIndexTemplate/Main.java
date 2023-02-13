@@ -12,7 +12,7 @@ public class Main {
         int right = 22;
 
         // print output to console
-        problem.selfDividingNumbers(left, right);
+        System.out.println(problem.selfDividingNumbers(left, right));
 
         // print confirmation program successfully finished to console
         System.out.println("\nMain program done!");
