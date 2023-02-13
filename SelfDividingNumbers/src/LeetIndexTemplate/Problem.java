@@ -8,7 +8,7 @@ public class Problem {
     // url of problem:
     // https://leetcode.com/problems/self-dividing-numbers/
 
-    // SUBMISSION DATE: yyyy.mm.dd
+    // SUBMISSION DATE: 2023.02.13
 
     public static List<Integer> selfDividingNumbers(int left, int right) {
 
