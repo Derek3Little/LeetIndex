@@ -39,5 +39,5 @@ class ProblemTest {
         String actual = Problem.generateTheString(testInt);
         assertEquals(expected, actual);
     }
-    
+
 }

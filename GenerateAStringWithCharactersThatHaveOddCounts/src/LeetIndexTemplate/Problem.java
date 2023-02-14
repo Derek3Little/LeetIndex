@@ -5,7 +5,7 @@ public class Problem {
     // url of problem:
     // https://leetcode.com/problems/generate-a-string-with-characters-that-have-odd-counts/
 
-    // SUBMISSION DATE: yyyy.mm.dd
+    // SUBMISSION DATE: 2023.02.14
 
     public static String generateTheString(int n) {
 
