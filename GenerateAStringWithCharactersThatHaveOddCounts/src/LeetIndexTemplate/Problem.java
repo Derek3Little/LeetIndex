@@ -7,7 +7,7 @@ public class Problem {
 
     // SUBMISSION DATE: yyyy.mm.dd
 
-    public String generateTheString(int n) {
+    public static String generateTheString(int n) {
 
         // for building string to return
         StringBuilder stringBuilder = new StringBuilder();
