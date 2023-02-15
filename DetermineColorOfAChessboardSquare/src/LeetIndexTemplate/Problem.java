@@ -7,7 +7,7 @@ public class Problem {
 
     // SUBMISSION DATE: yyyy.mm.dd
 
-    public boolean squareIsWhite(String coordinates) {
+    public static boolean squareIsWhite(String coordinates) {
 
         // default false on hypothetical 'a1'
         boolean white = false;
@@ -28,5 +28,4 @@ public class Problem {
 
         return white;
     }
-
 }
