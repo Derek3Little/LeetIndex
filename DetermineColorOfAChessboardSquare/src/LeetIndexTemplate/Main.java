@@ -11,7 +11,7 @@ public class Main {
         String sampleCoordinates = "c7";
 
         // print output to console
-
+        System.out.println(problem.squareIsWhite(sampleCoordinates));
 
         // print confirmation program successfully finished to console
         System.out.println("\nMain program done!");

@@ -5,7 +5,7 @@ public class Problem {
     // url of problem:
     // https://leetcode.com/problems/determine-color-of-a-chessboard-square/
 
-    // SUBMISSION DATE: yyyy.mm.dd
+    // SUBMISSION DATE: 2023.02.15
 
     public static boolean squareIsWhite(String coordinates) {
 
