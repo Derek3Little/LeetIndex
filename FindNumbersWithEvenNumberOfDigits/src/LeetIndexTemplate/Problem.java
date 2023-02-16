@@ -34,5 +34,3 @@ public class Problem {
         return count;
     }
 }
-
-}
