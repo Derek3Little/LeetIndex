@@ -12,7 +12,14 @@ public class Problem {
         // count for return
         int count = 0;
 
+        // loop through all nums
+        for (int num : nums) {
 
+            // get modulo of digit count, if zero add to count of evens
+            if (findDigitCount(num) % 2 == 0) {
+                count++;
+            }
+        }
 
         // return final count of evens
         return count;
