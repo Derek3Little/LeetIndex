@@ -9,7 +9,30 @@ public class Problem {
 
     public static int findNumbers(int[] nums) {
 
-        return 0;
+        // count for return
+        int count = 0;
+
+
+
+        // return final count of evens
+        return count;
     }
+
+    // method returns digit count of a num
+    public static int findDigitCount(int num) {
+
+        // count for return
+        int count = 0;
+
+        // count of digits by dividing digit by 10
+        while (num > 0) {
+            count++;
+            num = num / 10;
+        }
+
+        // return count of digits
+        return count;
+    }
+}
 
 }
