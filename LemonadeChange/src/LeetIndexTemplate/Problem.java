@@ -5,7 +5,7 @@ public class Problem {
     // url of problem:
     // https://leetcode.com/problems/lemonade-change/
 
-    // SUBMISSION DATE: yyyy.mm.dd
+    // SUBMISSION DATE: 2023.02.17
 
     public static boolean lemonadeChange(int[] bills) {
 
