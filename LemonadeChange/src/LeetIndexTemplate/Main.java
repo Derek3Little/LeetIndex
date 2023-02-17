@@ -8,10 +8,10 @@ public class Main {
         Problem problem = new Problem();
 
         // sample input
-        int[] sampleBills = {5,5,5,10,20};
+        int[] sampleBills = {10};
 
         // print output to console
-        System.out.println()
+        System.out.println(problem.lemonadeChange(sampleBills));
 
         // print confirmation program successfully finished to console
         System.out.println("\nMain program done!");
